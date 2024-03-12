@@ -1,0 +1,33 @@
+body {
+    margin: 200px; 
+}
+p{
+    font-size: 20px;
+}
+.big-text {
+    font-size: 20px; 
+}
+table, th, td {
+    border: 1px solid;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+label {
+    margin-bottom: 5px;
+    width: calc(10% - 10px);  
+}
+
+#customers th,
+#customers td {
+    font-size: 20px;
+    text-align: center;
+}
+
+

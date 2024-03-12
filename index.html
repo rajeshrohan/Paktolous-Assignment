@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"> </script>
+</head>
+<body>
+    <p> Write a program to achieve the following:</p>
+    <p>Create a page that will allow a user to information regarding a particular student in the database by
+        filling up a form like this: </p>
+    
+    <form id="studentForm" action="#" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" >
+        </div>
+        <div class="form-group">
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">PHONE:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="zip">ZIP:</label>
+            <input type="text" id="zip" name="zip">
+        </div>
+
+        <div class="form-group2">
+            <p>HOBBIES:</p>
+            <input type="checkbox" id="movies" value="Movies">
+            <label for="movies">Movies</label><br><br>
+            <input type="checkbox" id="football" value="Football">
+            <label for="football">Football</label><br><br>
+            <input type="checkbox" id="swimming" value="Swimming">
+            <label for="swimming">Swimming</label><br><br>
+            <input type="checkbox" id="music" value="Music">
+            <label for="music">Music</label><br><br>
+        </div>
+        
+        <input id="submitButton" type="submit" value="submit"> 
+        <span style="margin-right: 20px;"></span>
+        <input type="button" value="Cancel" onclick="clearForm()">
+    </form>
+
+    <p> The display of all the records should look somewhat like this:</p>
+
+    <table id="customers">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Zip Code</th>
+            <th>Hobbies</th>
+            <th>Edit</th>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>james@yahoo.com</td>
+            <td>3054019981</td>
+            <td>33322</td>
+            <td>Movies, Football, Swimming</td>
+            <td><button onclick="editRecord(1)">Edit</button></td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>john@gmail.com</td>
+            <td>9769220922</td>
+            <td>82822</td>
+            <td>Swimming</td>
+            <td><button onclick="editRecord(2)">Edit</button></td>
+        </tr>
+    </table>
+
+    <p>When Edit is clicked on the above grid, the user should see all the information in the form similar to the add one and be able to update the information. 
+    </p>
+
+    <p>Instructions: You can use the internet for your reference. You will be allowed to use Dreamweaver if you want. The database can be accessed via phpMyAdmin. Please create a DB by your name and create a DB structure to solve the problem most efficiently. 
+    </p>
+    <h3>GOOD LUCK!</h3>
+
+</body>
+</html>
